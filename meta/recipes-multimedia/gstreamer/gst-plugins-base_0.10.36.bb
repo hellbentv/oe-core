@@ -32,4 +32,6 @@ do_configure_prepend() {
 	rm -f ${S}/m4/lib-link.m4
 }
 
+CFLAGS_x86 += "-msse2"
+CXXFLAGS_x86 += "-msse2"
 FILES_${PN} += "${datadir}/${BPN}"

@@ -34,6 +34,8 @@ EXTRA_OECONF += " \
     --disable-libvisual \
     ${GSTREAMER_1_0_ORC} \
 "
+CFLAGS_x86 += "-msse2"
+CXXFLAGS_x86 += "-msse2"
 
 FILES_${PN} += "${datadir}/gst-plugins-base"
 
